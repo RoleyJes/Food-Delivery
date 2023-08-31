@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css"
+      rel="stylesheet" />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link href="css/style.css" rel="stylesheet" />
+
+    <title>Food Delivery</title>
+  </head>
+  <body class="font-montserrat">
+    <!-- Mobile Side Menu -->
+    <aside
+      id="drawer-right-example"
+      class="fixed top-0 right-0 z-50 h-screen p-4 pt-32 overflow-y-auto transition-transform translate-x-full bg-white w-[70%]"
+      tabindex="-1"
+      aria-labelledby="drawer-right-label">
+      <div
+        class="absolute top-10 right-6 w-[2rem]"
+        data-drawer-hide="drawer-right-example"
+        aria-controls="drawer-right-example"
+        id="closeMenu">
+        <img class="w-full" src="assets/icon-menu-close.svg" alt="close menu" />
+      </div>
+
+      <!-- Links -->
+      <ul
+        class="flex flex-col gap-y-10 text-lg pl-8 font-semibold tracking-[0.2px] text-darkBgTxt">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Product</a>
+        </li>
+        <li>
+          <a href="#">Faq</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- NavBar -->
+    <nav
+      class="flex items-center justify-between pt-[26px] pb-[28px] px-4 lg:pl-[70px] lg:pr-[40px]">
+      <div class="w-[104px] h-[51px]">
+        <img
+          class="w-full h-full"
+          src="assets/Bella Olonje logo 111 1.png"
+          alt="logo" />
+      </div>
+
+      <!-- Nav links -->
+      <div class="hidden lg:block">
+        <ul
+          class="flex items-center gap-[94px] justify-between font-semibold tracking-[0.2px] text-darkBgTxt">
+          <li>
+            <a
+              href="#"
+              class="link active:text-orange hover:text-orange focus:text-orange transition-all"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="link active:text-orange hover:text-orange focus:text-orange transition-all"
+              >Product</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="link active:text-orange hover:text-orange focus:text-orange transition-all"
+              >Faq</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="link active:text-orange hover:text-orange focus:text-orange transition-all"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Mobile menu -->
+      <div
+        id="openMenu"
+        class="lg:hidden"
+        data-drawer-target="drawer-right-example"
+        data-drawer-show="drawer-right-example"
+        data-drawer-placement="right"
+        aria-controls="drawer-right-example">
+        <img src="assets/bx_bx-menu-alt-right.svg" alt="menu" />
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="relative bg-[#fafafa] pb-[15rem] lg:bg-none lg:pb-0">
+      <div class="hidden lg:block lg:w-full lg:h-full -z-10">
+        <img
+          class="w-full h-full"
+          src="assets/Rectangle 48.png"
+          alt="plates with meals" />
+      </div>
+      <div
+        class="text-center tracking-[0.2px] pt-8 py-0 lg:px-[12rem] lg:absolute lg:top-[20%] lg:-translate-y-[20%] lg:left-1/2 lg:-translate-x-1/2">
+        <p class="font-bold text-base text-secTxt lg:text-2xl lg:text-offwhite">
+          Food app
+        </p>
+        <p
+          class="my-[17px] max-w-[58rem] mx-auto font-bold leading-[42.5px] text-darkBgTxt text-[36px] md:max-w-[35rem] md:leading-[55px] md:text-[2.5rem] lg:text-white lg:font-poppins lg:text-[3.6rem] lg:leading-[80px] lg:w-[60rem] lg:max-w-[70rem] lg:text-center">
+          Why stay hungry when you can order form Bella Onojie?
+        </p>
+        <p class="text-secTxt lg:text-offwhite text-2xl font-medium mb-[54px]">
+          Download the Bella Onojie food app now on
+        </p>
+        <div
+          class="relative flex flex-col items-center justify-center gap-5 z-20 lg:flex-row lg:gap-[34px]">
+          <div
+            class="bg-orange shadow-btn rounded-[30px] w-[14rem] py-4 text-white text-2xl font-bold cursor-pointer hover:bg-[#fa4b0cd0] transition-all">
+            Playstore
+          </div>
+          <div
+            class="border border-orange rounded-[30px] w-[14rem] py-4 text-orange text-2xl font-bold cursor-pointer hover:bg-[#fa4b0cd0] hover:border-[#fa4b0cd0] lg:border-white lg:text-white transition-all">
+            App store
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="-mt-48 mb-20 flex justify-center items-center lg:mt-16 xl:-mt-36">
+      <img src="img/Group 53.png" alt="" class="z-20" />
+    </div>
+
+    <!-- How it works -->
+    <section class="py-4 mb-10 lg:mb-[9.8rem]">
+      <div
+        class="flex flex-col items-center gap-y-10 mb-10 lg:gap-y-[4.5rem] lg:flex-col-reverse lg:mb-[8.5rem]">
+        <p
+          class="text-black font-semibold text-2xl lg:text-[44px] lg:tracking-[0.1px] lg:font-poppins">
+          How the app works
+        </p>
+        <div class="h-[3px] w-full bg-gray lg:w-[70%] lg:mx-auto"></div>
+      </div>
+      <div class="px-6 md:px-16">
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in"
+          data-aos-once="true"
+          class="mb-16 md:mb-20 lg:flex lg:flex-row-reverse lg:items-center lg:justify-center lg:gap-x-[10.7rem]">
+          <div class="text-center lg:text-left">
+            <p class="text-orange font-bold text-2xl">Create an account</p>
+            <p
+              class="text-[40px] leading-[57px] text-darkBgTxt font-bold my-8 md:my-6 md:w-[35rem] mx-auto">
+              Create/login to an existing account to get started
+            </p>
+            <p
+              class="font-medium text-2xl text-secTxt leading-[38px] max-w-[16rem] mx-auto md:max-w-[20rem] lg:mx-0 lg:max-w-[30rem]">
+              An account is created with your email and a desired password
+            </p>
+          </div>
+
+          <div
+            class="shadow-shd w-[16.8rem] h-[32.8rem] mt-10 text-center mx-auto lg:mt-0 lg:mx-0">
+            <img src="img/Rectangle (2).png" alt="" class="w-full h-full" />
+          </div>
+        </div>
+
+        <div
+          data-aos="fade-up-left"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in"
+          data-aos-once="true"
+          class="mb-16 md:mb-20 lg:flex lg:items-center lg:justify-center lg:gap-x-[10.7rem]">
+          <div class="text-center lg:text-left">
+            <p class="text-orange font-bold text-2xl">Explore while shopping</p>
+            <p
+              class="text-[40px] leading-[57px] text-darkBgTxt font-bold my-8 md:my-6 md:w-[30rem] mx-auto">
+              Shop for your favorite meal as e dey hot.
+            </p>
+            <p
+              class="font-medium text-2xl text-secTxt leading-[38px] max-w-[16rem] mx-auto md:max-w-[20rem] lg:mx-0 lg:max-w-[30rem]">
+              Shop for your favorite meals or drinks and enjoy while doing it.
+            </p>
+          </div>
+
+          <div
+            class="shadow-shd w-[16.8rem] h-[32.8rem] mt-10 text-center mx-auto lg:mt-0 lg:mx-0">
+            <img src="img/Rectangle (3).png" alt="" class="w-full h-full" />
+          </div>
+        </div>
+
+        <div
+          data-aos="fade-up-right"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in"
+          data-aos-once="true"
+          class="lg:flex lg:flex-row-reverse lg:items-center lg:justify-center lg:gap-x-[10.7rem]">
+          <div class="text-center lg:text-left">
+            <p class="text-orange font-bold text-2xl">Checkout</p>
+            <p
+              class="text-[40px] leading-[57px] text-darkBgTxt font-bold my-8 md:my-6 md:w-[35rem] mx-auto">
+              When you're done, check out and get it delivered.
+            </p>
+            <p
+              class="font-medium text-2xl text-secTxt leading-[38px] max-w-[257px] mx-auto md:max-w-[20rem] lg:mx-0 lg:max-w-[30rem]">
+              Check out and get it delivered with ease once you're done.
+            </p>
+          </div>
+
+          <div
+            class="shadow-shd w-[16.8rem] h-[32.8rem] mt-10 text-center mx-auto lg:mt-0 lg:mx-0">
+            <img src="img/Rectangle (4).png" alt="" class="w-full h-full" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download -->
+    <section class="pt-28 pb-24 bg-darkBgTxt lg:pt-0 lg:pb-0 relative">
+      <div class="hidden lg:block lg:w-full lg:h-full">
+        <img class="w-full h-full" src="assets/Rectangle 47.png" alt="" />
+      </div>
+
+      <div
+        class="px-6 text-center lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-1/2 lg:-translate-x-1/2">
+        <p class="text-white text-[40px] font-bold leading-[57px]">
+          Download the app now.
+        </p>
+        <p
+          class="text-2xl font-medium leading-[38px] text-[#bdbdbd] max-w-[350px] mx-auto mt-10 mb-14 lg:w-[65rem] lg:max-w-[65rem] lg:text-white">
+          Available on your favorite store. Start your premium experience now
+        </p>
+        <div class="flex gap-4 items-center justify-center">
+          <div
+            class="cursor-pointer text-white text-base text-center font-bold py-[18px] px-8 bg-orange rounded-[10px] hover:bg-[#fa4b0cd0] transition-all">
+            Playstore
+          </div>
+          <div
+            class="cursor-pointer text-white text-base text-center font-bold py-[16px] px-8 rounded-[10px] hover:bg-[#fa4b0cd0] border border-white transition-all">
+            App store
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="flex items-center justify-around p-16">
+      <div class="hidden w- h- lg:block">
+        <img class="w- h-" src="assets/image 12.png" alt="logo" />
+      </div>
+      <div
+        class="flex flex-col gap-y-4 items-center justify-center lg:flex-row lg:justify-around">
+        <div class="flex items-center gap-6">
+          <img
+            src="assets/ant-design_twitter-outlined.svg"
+            alt="twitter logo" />
+          <img
+            src="assets/ant-design_facebook-filled.svg"
+            alt="facebook logo" />
+          <img src="assets/instagram.png" alt="instagram logo" />
+        </div>
+        <p class="font-bold text-xs to-secTxt2 lg:hidden">
+          Copyright 2023 Jessica Imoesemi
+        </p>
+      </div>
+      <p class="hidden font-bold text-xs to-secTxt2 lg:block">
+        Copyright 2023 Jessica Imoesemi
+      </p>
+    </footer>
+
+    <!-- <script src="index.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
